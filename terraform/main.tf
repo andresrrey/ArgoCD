@@ -120,13 +120,3 @@ resource "google_container_cluster" "k8s" {
     }
    }
 }
-
-resource "google_storage_bucket_iam_member" "k8s" {
-  bucket = google_container_registry.k8s.id
-  role = "roles/storage.admin"
-  member = "user:andresrrey@gmail.com"
-}
-
-resource "google_container_registry" "k8s" {
-  project = var.gcp_project_id
-}
