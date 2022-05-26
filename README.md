@@ -89,4 +89,6 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 
 6. Obtain any node external IP and connect to the interface by using the port 30001. Login with admin and the password obtained from the previous step
 
-7. Deploy you first app by forking and using any sample from https://github.com/argoproj/argocd-example-apps. Keep in mind that GKE autopilot has some default quotas and it won't scale up after a couple of nodes. You can use the `kustomize-guestbook` app from my fork https://github.com/andresrrey/argocd-example-apps which already nhave limits set to deploy at least 3 pods.
+7. Deploy you first app by forking and using any sample from https://github.com/argoproj/argocd-example-apps. 
+
+Keep in mind that GKE autopilot has some default quotas and it won't scale up after a couple of nodes. You can use the `kustomize-guestbook` app from my fork https://github.com/andresrrey/argocd-example-apps which already nhave limits set to deploy at least 3 pods.
