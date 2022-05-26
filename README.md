@@ -91,4 +91,4 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 
 7. Deploy you first app by forking and using any sample from https://github.com/argoproj/argocd-example-apps.
 
-      Keep in mind that GKE autopilot has some default quotas and it won't scale up after a couple of nodes. You can use the `kustomize-guestbook` app from my fork https://github.com/andresrrey/argocd-example-apps which already nhave limits set to deploy at least 3 pods.
+      Keep in mind that GKE autopilot has some default quotas and it won't scale up after a couple of nodes. You can use the `kustomize-guestbook` app from my fork https://github.com/andresrrey/argocd-example-apps which already have limits set to deploy until 3 pods with the default quotas.
